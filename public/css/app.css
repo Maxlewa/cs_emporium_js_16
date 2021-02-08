@@ -16132,3 +16132,81 @@ header {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+#sectioncinqrow {
+  text-align: center;
+  font-family: 'poppinsregular';
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.customers {
+  background-color: #e4e2e2;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.customers i {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.customers h5 {
+  margin-bottom: 40px;
+  font-family: 'poppinsbold';
+}
+
+.customers p {
+  margin-bottom: 40px;
+}
+
+#shipping {
+  background-color: #c42b2b;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#shipping i {
+  font-size: 30px;
+  margin-bottom: 40px;
+  color: white;
+}
+
+#shipping h5 {
+  margin-bottom: 40px;
+  font-family: 'poppinsbold';
+  color: white;
+}
+
+#shipping p {
+  margin-bottom: 40px;
+  color: white;
+}
+
+.customersbutton {
+  background-color: #5a5a5a;
+  color: white;
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border: solid 0;
+}
+
+#shippingbutton {
+  background-color: white;
+  color: #5a5a5a;
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border: solid 0;
+}
