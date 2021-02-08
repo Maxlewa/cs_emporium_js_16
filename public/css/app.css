@@ -15937,3 +15937,41 @@ header {
   width: 100%;
   height: auto;
 }
+
+#sectionun {
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+#divlivingroom {
+  width: 32%;
+  background-image: url("../img/services/service-1.jpg");
+  background-size: cover;
+}
+
+#divsaleitems {
+  width: 32%;
+  background-image: url("../img/services/service-2.jpg");
+  background-size: cover;
+}
+
+#divclothes {
+  width: 32%;
+  background-image: url("../img/services/service-3.jpg");
+  background-size: cover;
+}
+
+.h4troisimg {
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.ligneblanche {
+  height: 2px;
+  background-color: white;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 50px;
+}
