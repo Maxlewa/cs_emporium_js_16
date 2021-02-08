@@ -15852,6 +15852,7 @@ header {
   width: 800px;
   margin: auto;
   margin-top: 60px;
+  padding-bottom: 40px;
 }
 
 .navelement, .navelement:hover {
@@ -15883,4 +15884,56 @@ header {
   background-color: grey;
   color: white;
   border-color: white;
+}
+
+#divshopat {
+  background-color: #F3F3F3;
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-bottom: 100px;
+}
+
+#divshopat #divleftshopat {
+  padding-top: 90px;
+  width: 650px;
+}
+
+#h3shopat {
+  color: #c42b2b;
+  font-family: 'poppinsregular';
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+#h1shopat {
+  font-family: 'poppinsbold';
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+#pshopat {
+  margin-bottom: 30px;
+}
+
+#buttonshopat {
+  font-family: 'poppinslight';
+  font-size: 14px;
+  background-color: #c42b2b;
+  color: white;
+  border: solid 0px;
+  border-radius: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 34px;
+  padding-right: 34px;
+}
+
+#divimgshopat {
+  width: 400px;
+  height: 300px;
+}
+
+#divimgshopat img {
+  width: 100%;
+  height: auto;
 }
