@@ -3,8 +3,16 @@
     margin-bottom: 50px
     
 .imgrecent
+    overflow: hidden
+    position: relative
+    
     img
         width: 100%
+        display: block
+        transition: transform .2s
+        position: relative
+    img:hover 
+        transform: scale(1.1)
 
 .container
     margin-bottom: 30px
