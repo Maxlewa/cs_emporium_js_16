@@ -16003,6 +16003,7 @@ header {
 .imgrecent {
   overflow: hidden;
   position: relative;
+  display: block;
 }
 
 .imgrecent img {
@@ -16014,6 +16015,48 @@ header {
 
 .imgrecent img:hover {
   transform: scale(1.1);
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  color: white;
+  opacity: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+}
+
+.overlay .details {
+  overflow: hidden;
+  background-color: black;
+  padding-left: 43px;
+  padding-right: 43px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.overlay .cart {
+  overflow: hidden;
+  background-color: red;
+  padding-left: 43px;
+  padding-right: 43px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.imgrecent:hover .overlay {
+  opacity: 1;
+  bottom: 0;
+}
+
+.imgrecent .overlay {
+  bottom: -30%;
 }
 
 .container {
