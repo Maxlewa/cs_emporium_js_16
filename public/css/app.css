@@ -15846,13 +15846,31 @@ header {
 #divh1header {
   font-family: 'poppinsbold';
   text-align: center;
+  margin-bottom: 30px;
+}
+
+.stickytitle {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 1;
 }
 
 #divnav {
-  width: 800px;
+  width: 100%;
   margin: auto;
-  margin-top: 60px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 300px;
+  padding-right: 300px;
+  background-color: white;
 }
 
 .navelement, .navelement:hover {
@@ -15940,7 +15958,7 @@ header {
 
 #sectionun {
   margin-top: 20px;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
 #divlivingroom {
@@ -15966,6 +15984,7 @@ header {
   color: white;
   margin-top: 50px;
   margin-bottom: 30px;
+  font-family: 'poppinsregular';
 }
 
 .ligneblanche {
@@ -15974,4 +15993,55 @@ header {
   width: 80%;
   margin: auto;
   margin-bottom: 50px;
+}
+
+#divrecentproductstitle {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.imgrecent img {
+  width: 100%;
+}
+
+.container {
+  margin-bottom: 30px;
+}
+
+.col-4 {
+  margin-bottom: 30px;
+}
+
+.divtexterecent {
+  margin-top: 30px;
+}
+
+.texteligneun {
+  text-align: center;
+  font-family: 'poppinsbold';
+}
+
+.textelignedeux {
+  text-align: center;
+  font-family: 'poppinsregular';
+  color: #c42b2b;
+}
+
+.textelignedeux span {
+  color: grey;
+  text-decoration: line-through;
+}
+
+.boutonsale {
+  margin-top: 30px;
+}
+
+.boutonsale button {
+  font-family: 'poppinsregular';
+  color: white;
+  background-color: #c42b2b;
+  border-radius: 100%;
+  height: 60px;
+  width: 60px;
+  border: solid 0px;
 }
