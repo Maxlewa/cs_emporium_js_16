@@ -35,6 +35,8 @@ var span = document.getElementsByClassName("close")[0];
 // Ouvrir le modal en cliquant sur connexion
 btn.onclick = function() {
   modal.style.display = "block";
+  formDeux.style.display = "none"
+  formUn.style.display = "block"
 }
 
 // Fermer le modal en cliquant sur x
@@ -49,7 +51,7 @@ window.onclick = function(event) {
   }
 }
 
-// INSCRIPTION
+// INSCRIPTION / CONNEXION
 
 var buttonIns = document.getElementById("btninscription")
 var buttonCo = document.getElementById("btnconnexion")
