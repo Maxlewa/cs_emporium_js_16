@@ -48,3 +48,20 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+// INSCRIPTION
+
+var buttonIns = document.getElementById("btninscription")
+var buttonCo = document.getElementById("btnconnexion")
+var formDeux = document.getElementById("formulairedeux")
+var formUn = document.getElementById("formulaireun")
+
+buttonIns.onclick = function() {
+  formDeux.style.display = "block"
+  formUn.style.display = "none"
+}
+
+buttonCo.onclick = function() {
+  formUn.style.display = "block"
+  formDeux.style.display = "none"
+}
