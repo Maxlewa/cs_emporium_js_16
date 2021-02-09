@@ -112,3 +112,32 @@ function white() {
   });
 }
 
+// CARROUSEL
+
+// class Carousel {
+
+//   constructor (element, options = {}) {
+//     this.element = element
+//     this.options = Object.assign({}, {
+//       slidesToScroll : 1,
+//       slidesVisible : 4
+//     }, options)
+//   }
+
+// }
+
+// document.addEventListener('DOMContentLoaded', function () {
+
+//   new Carousel (document.querySelector("#carousel")), {
+//     slidesToScroll : 1,
+//     slidesVisible : 4
+  
+//   }
+
+// })
+
+// let item = document.querySelectorAll(".carouselitem");
+
+// item.forEach(e => {
+//   e.style.width = ((100 / slidesVisible) / ratio) + "%"
+// });
