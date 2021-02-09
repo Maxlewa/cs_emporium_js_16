@@ -16229,29 +16229,55 @@ header {
 }
 
 #carousel {
-  position: relative;
   overflow: hidden;
   margin-top: 60px;
+  display: flex;
+}
+
+#carouselpano {
+  display: flex;
+  transition: 0.5s;
 }
 
 .carouselitem {
-  float: left;
-  flex-wrap: nowrap;
   width: 23%;
-  height: 300px;
   margin-left: 5px;
   margin-right: 5px;
 }
 
-#carouselpano::after {
-  content: '';
-  clear: both;
-  display: table;
+.carouselitem .imgrecentbis {
+  width: 267px;
+}
+
+.carouselitem .imgrecentbis img {
+  width: 100%;
 }
 
 #titlecarousel h4 {
   text-align: center;
   margin-bottom: 50px;
+}
+
+.map {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.map button {
+  border-radius: 100%;
+  border: solid 2px grey;
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: white;
+}
+
+.map button:hover {
+  background-color: black;
+  transition: 0.5s;
 }
 
 #sectioncinqrow {

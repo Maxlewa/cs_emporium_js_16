@@ -114,30 +114,34 @@ function white() {
 
 // CARROUSEL
 
-// class Carousel {
+const slides = document.querySelector("#carouselpano")
+const buttons = document.querySelector(".map")
 
-//   constructor (element, options = {}) {
-//     this.element = element
-//     this.options = Object.assign({}, {
-//       slidesToScroll : 1,
-//       slidesVisible : 4
-//     }, options)
-//   }
+buttons.addEventListener('click', e => {
+  if (e.target.nodeName === "BUTTON") {
+    Array.from(buttons.children).forEach(item => item.classList.remove("active"))
+    if (e.target.classList.contains("first")) {
+      slides.style.transform = "translateX(0)"
+      e.target.classList.add("active")
+      // e.target.parentNode.style.border = "solid 2px aqua"
+      e.target.parentNode.style.opacity = "80%"
+    } else if (e.target.classList.contains("second")) {
+      slides.style.transform = "translateX(-14.2%)"
+      e.target.classList.add("active")
+      // e.target.parentNode.style.border = "solid 2px aqua"
+      e.target.parentNode.style.opacity = "80%"
+    } else if (e.target.classList.contains("third")) {
+      slides.style.transform = "translateX(-28.4%)"
+      e.target.classList.add("active")
+      // e.target.parentNode.style.border = "solid 2px aqua"
+      e.target.parentNode.style.opacity = "80%"
+    } else if (e.target.classList.contains("fourth")) {
+      slides.style.transform = "translateX(-42.6%)"
+      e.target.classList.add("active")
+      // e.target.parentNode.style.border = "solid 2px aqua"
+      e.target.parentNode.style.opacity = "80%"
+    }
 
-// }
+  }
 
-// document.addEventListener('DOMContentLoaded', function () {
-
-//   new Carousel (document.querySelector("#carousel")), {
-//     slidesToScroll : 1,
-//     slidesVisible : 4
-  
-//   }
-
-// })
-
-// let item = document.querySelectorAll(".carouselitem");
-
-// item.forEach(e => {
-//   e.style.width = ((100 / slidesVisible) / ratio) + "%"
-// });
+})

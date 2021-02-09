@@ -1,34 +1,46 @@
 #sectionquatre
     margin-top: 80px
-    
+
+// content
 #carousel
-    position: relative
+    // position: relative
     overflow: hidden
     margin-top: 60px
+    display: flex
+
+// slide
+#carouselpano
+    display: flex
+    // flex-wrap: wrap
+    transition: 0.5s
 
 .carouselitem
-    float: left
-    flex-wrap: nowrap
     width: 23%
-    height: 300px
     margin-left: 5px
     margin-right: 5px
-
-// #carouselpano
-//     display: flex
-//     flex-wrap: nowrap
-
-#carouselpano::after
-    content: ''
-    clear: both
-    display: table
+    .imgrecentbis
+        width: 267px
+        img
+            width: 100%
 
 #titlecarousel
     h4
         text-align: center
         margin-bottom: 50px
 
-
-// carousel__container = carouselpano
-
-// 4 images à 23%
+.map
+    display: flex
+    justify-content: center
+    margin-top: 20px
+    margin-bottom: 50px
+    button
+        border-radius: 100%
+        border: solid 2px grey
+        width: 20px
+        height: 20px
+        margin-left: 10px
+        margin-right: 10px
+        background-color: white
+    button:hover 
+        background-color: black
+        transition: 0.5s
