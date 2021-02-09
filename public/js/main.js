@@ -67,3 +67,48 @@ buttonCo.onclick = function() {
   formUn.style.display = "block"
   formDeux.style.display = "none"
 }
+
+// DARK MODE
+
+let btnBlack = document.querySelector("#buttonblack")
+let btnWhite = document.querySelector("#buttonwhite")
+
+let titreMain = document.querySelector("#h1main")
+let divNav = document.querySelector("#divnav")
+let navEl = document.querySelectorAll(".navelement");
+let textLigneun = document.querySelectorAll(".texteligneun")
+let recentpTitle = document.querySelector("#h4recentproducts")
+
+btnBlack.addEventListener('click', noir)
+btnWhite.addEventListener('click', white)
+
+function noir() {
+  document.body.style.background = 'black';
+  divNav.style.background = 'black';
+  titreMain.style.color = 'white';
+  recentpTitle.style.color = 'white';
+  // LINKS
+  navEl.forEach(e => {
+    e.style.color = 'white'
+  });
+  // TEXTES LIGNES 1
+  textLigneun.forEach(e => {
+    e.style.color = 'white'
+  });
+}
+
+function white() {
+  document.body.style.background = 'white';
+  divNav.style.background = 'white';
+  titreMain.style.color = 'black';
+  recentpTitle.style.color = 'black';
+  // LINKS
+  navEl.forEach(e => {
+    e.style.color = 'black'
+  });
+  // TEXTES LIGNES 1
+  textLigneun.forEach(e => {
+    e.style.color = 'black'
+  });
+}
+
