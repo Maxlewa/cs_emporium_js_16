@@ -72,8 +72,10 @@
     transform: none
     visibility: visible
 
+// MEDIA QUERIES
+
 // IPHONE X
-@media screen and (min-width:375px) and (max-width:812px)
+@media screen and (min-width:375px) and (max-width:767px)
     #sectioncinqrow
         flex-wrap: wrap
     .customers
@@ -84,6 +86,29 @@
         margin-left: 0
         margin-right: 0
         
-
 // IPAD
-@media screen and (min-width:813px) and (max-width:1024px)
+@media screen and (min-width:768px) and (max-width:1024px)
+    #sectioncinqrow
+        flex-wrap: nowrap
+        .customers
+            padding-top: 40px
+            padding-bottom: 20px
+            padding-left: 15px
+            padding-right: 15px
+            margin-left: 10px
+            margin-right: 10px
+            h5
+                font-size: 12px
+            p
+                font-size: 12px
+        #shipping
+            padding-top: 40px
+            padding-bottom: 20px
+            padding-left: 15px
+            padding-right: 15px
+            margin-left: 5px
+            margin-right: 5px
+            h5
+                font-size: 12px
+            p
+                font-size: 12px
