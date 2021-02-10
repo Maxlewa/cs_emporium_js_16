@@ -16194,6 +16194,7 @@ header {
 
 #sectiontrois {
   background-image: url("../img/cta-bg.jpg");
+  background-attachment: fixed;
   background-size: cover;
   height: 850px;
   position: relative;
@@ -16240,7 +16241,6 @@ header {
 }
 
 .carouselitem {
-  width: 23%;
   margin-left: 5px;
   margin-right: 5px;
 }

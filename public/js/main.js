@@ -79,6 +79,8 @@ let navEl = document.querySelectorAll(".navelement");
 let textLigneun = document.querySelectorAll(".texteligneun")
 let recentpTitle = document.querySelector("#h4recentproducts")
 
+let carouselTitle = document.querySelector("#h4carousel")
+
 btnBlack.addEventListener('click', noir)
 btnWhite.addEventListener('click', white)
 
@@ -87,6 +89,7 @@ function noir() {
   divNav.style.background = 'black';
   titreMain.style.color = 'white';
   recentpTitle.style.color = 'white';
+  carouselTitle.style.color = 'white';
   // LINKS
   navEl.forEach(e => {
     e.style.color = 'white'
@@ -102,6 +105,7 @@ function white() {
   divNav.style.background = 'white';
   titreMain.style.color = 'black';
   recentpTitle.style.color = 'black';
+  carouselTitle.style.color = 'black';
   // LINKS
   navEl.forEach(e => {
     e.style.color = 'black'
@@ -123,25 +127,22 @@ buttons.addEventListener('click', e => {
     if (e.target.classList.contains("first")) {
       slides.style.transform = "translateX(0)"
       e.target.classList.add("active")
-      // e.target.parentNode.style.border = "solid 2px aqua"
       e.target.parentNode.style.opacity = "80%"
     } else if (e.target.classList.contains("second")) {
       slides.style.transform = "translateX(-14.2%)"
       e.target.classList.add("active")
-      // e.target.parentNode.style.border = "solid 2px aqua"
       e.target.parentNode.style.opacity = "80%"
     } else if (e.target.classList.contains("third")) {
       slides.style.transform = "translateX(-28.4%)"
       e.target.classList.add("active")
-      // e.target.parentNode.style.border = "solid 2px aqua"
       e.target.parentNode.style.opacity = "80%"
     } else if (e.target.classList.contains("fourth")) {
       slides.style.transform = "translateX(-42.6%)"
       e.target.classList.add("active")
-      // e.target.parentNode.style.border = "solid 2px aqua"
       e.target.parentNode.style.opacity = "80%"
     }
-
   }
-
 })
+
+// FADE IN
+
