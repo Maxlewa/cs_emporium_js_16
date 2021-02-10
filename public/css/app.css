@@ -15998,7 +15998,7 @@ header {
   }
   #divshopat {
     display: block;
-    padding-left: 20px;
+    padding-left: 40px;
     padding-right: 20px;
     padding-bottom: 50px;
   }
@@ -16154,6 +16154,15 @@ header {
   margin-bottom: 50px;
 }
 
+@media screen and (min-width: 375px) and (max-width: 812px) {
+  #sectionun {
+    margin-bottom: 50px;
+  }
+  .h4troisimg {
+    font-size: 14px;
+  }
+}
+
 #divrecentproductstitle {
   text-align: center;
   margin-bottom: 50px;
@@ -16222,7 +16231,7 @@ header {
   margin-bottom: 30px;
 }
 
-.col-4 {
+.col-lg-4 {
   margin-bottom: 30px;
 }
 
@@ -16293,6 +16302,22 @@ header {
   padding-right: 15px;
 }
 
+@media screen and (min-width: 375px) and (max-width: 812px) {
+  #sectiontrois {
+    height: 400px;
+  }
+  #divtextesectiontrois {
+    margin: 0;
+    text-align: center;
+    padding-top: 160px;
+  }
+  #divtextesectiontrois h1 {
+    color: white;
+    font-family: 'poppinsregular';
+    font-size: 26px;
+  }
+}
+
 #sectionquatre {
   margin-top: 80px;
 }
@@ -16346,6 +16371,12 @@ header {
 .map button:hover {
   background-color: black;
   transition: 0.5s;
+}
+
+@media screen and (min-width: 375px) and (max-width: 812px) {
+  #sectionquatre {
+    display: none;
+  }
 }
 
 #sectioncinqrow {
@@ -16523,11 +16554,27 @@ header {
     padding-bottom: 20px;
   }
   .footergreyelement {
-    width: 80%;
+    width: 100%;
     padding-left: 10px;
     padding-right: 10px;
   }
   .footergreyelement h4 {
     margin-bottom: 20px;
+  }
+  #pgrey {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  #footerbuttons {
+    font-size: 14px;
+  }
+  #footermilieu {
+    margin-bottom: 20px;
+  }
+  #footermilieu p {
+    font-size: 14px;
+  }
+  #footerblack p {
+    font-size: 14px;
   }
 }
