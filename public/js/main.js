@@ -72,13 +72,11 @@ buttonCo.onclick = function() {
 
 let btnBlack = document.querySelector("#buttonblack")
 let btnWhite = document.querySelector("#buttonwhite")
-
 let titreMain = document.querySelector("#h1main")
 let divNav = document.querySelector("#divnav")
 let navEl = document.querySelectorAll(".navelement");
 let textLigneun = document.querySelectorAll(".texteligneun")
 let recentpTitle = document.querySelector("#h4recentproducts")
-
 let carouselTitle = document.querySelector("#h4carousel")
 
 btnBlack.addEventListener('click', noir)
@@ -90,11 +88,9 @@ function noir() {
   titreMain.style.color = 'white';
   recentpTitle.style.color = 'white';
   carouselTitle.style.color = 'white';
-  // LINKS
   navEl.forEach(e => {
     e.style.color = 'white'
   });
-  // TEXTES LIGNES 1
   textLigneun.forEach(e => {
     e.style.color = 'white'
   });
@@ -106,11 +102,9 @@ function white() {
   titreMain.style.color = 'black';
   recentpTitle.style.color = 'black';
   carouselTitle.style.color = 'black';
-  // LINKS
   navEl.forEach(e => {
     e.style.color = 'black'
   });
-  // TEXTES LIGNES 1
   textLigneun.forEach(e => {
     e.style.color = 'black'
   });
@@ -146,3 +140,19 @@ buttons.addEventListener('click', e => {
 
 // FADE IN
 
+const faders = document.querySelectorAll('.fade-in');
+
+const appearOnScroll = new IntersectionObserver(function(entries,appearOnScroll) {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            return;
+        } else {
+            entry.target.classList.add('appear');
+            appearOnScroll.unobserve(entry.target);
+        }
+    });
+});
+
+faders.forEach(el => {
+    appearOnScroll.observe(el);
+});

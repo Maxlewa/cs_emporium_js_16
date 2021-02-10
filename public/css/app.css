@@ -16358,6 +16358,19 @@ header {
   border: solid 0;
 }
 
+.fade-in {
+  opacity: 0;
+  transform: translateY(3vh);
+  visibility: hidden;
+  transition: opacity 1s ease-in, transform 1.2s ease-out;
+}
+
+.fade-in.appear {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
 #footer {
   background-color: #4b4c58;
   color: white;

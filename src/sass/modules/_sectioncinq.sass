@@ -58,3 +58,14 @@
     padding-top: 7px
     padding-bottom: 7px
     border: solid 0
+
+.fade-in
+    opacity: 0
+    transform: translateY(3vh)
+    visibility: hidden
+    transition: opacity 1s ease-in, transform 1.2s ease-out
+
+.fade-in.appear
+    opacity: 1
+    transform: none
+    visibility: visible
