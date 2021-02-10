@@ -15875,26 +15875,34 @@ header {
 
 .navelement, .navelement:hover {
   text-decoration: none;
-  font-family: 'poppinsregular';
+  font-family: 'poppinsmedium';
   font-size: 16px;
   color: black;
   padding-top: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.navelement:hover {
+  color: #c42b2b;
 }
 
 #buttonwhite {
   width: 50px;
   height: 30px;
   background-color: white;
-  border: 1px solid grey;
+  border: 0px solid grey;
   border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #buttonblack {
   width: 50px;
   height: 30px;
   background-color: black;
-  border: 1px solid grey;
+  border: 0px solid grey;
   border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #buttonblack i {
@@ -15911,6 +15919,7 @@ header {
   padding-bottom: 4px;
   padding-left: 7px;
   padding-right: 7px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .dropdown {
@@ -16008,7 +16017,7 @@ header {
   }
   #divshopat #divleftshopat {
     padding-top: 40px;
-    width: 30px;
+    width: 200px;
   }
   #divshopat #divleftshopat #h3shopat {
     color: #c42b2b;
@@ -16178,18 +16187,21 @@ header {
   width: 32%;
   background-image: url("../img/services/service-1.jpg");
   background-size: cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #divsaleitems {
   width: 32%;
   background-image: url("../img/services/service-2.jpg");
   background-size: cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #divclothes {
   width: 32%;
   background-image: url("../img/services/service-3.jpg");
   background-size: cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .h4troisimg {
@@ -16235,6 +16247,7 @@ header {
   overflow: hidden;
   position: relative;
   display: block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .imgrecent img {
@@ -16279,6 +16292,26 @@ header {
   padding-right: 43px;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.overlay .detailsicon {
+  overflow: hidden;
+  background-color: black;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: none;
+}
+
+.overlay .carticon {
+  overflow: hidden;
+  background-color: red;
+  padding-left: 43px;
+  padding-right: 43px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: none;
 }
 
 .imgrecent:hover .overlay {
@@ -16330,6 +16363,21 @@ header {
   height: 60px;
   width: 60px;
   border: solid 0px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .details {
+    display: none;
+  }
+  .cart {
+    display: none;
+  }
+  .detailsicon {
+    display: block !important;
+  }
+  .carticon {
+    display: block !important;
+  }
 }
 
 #sectiontrois {
@@ -16481,6 +16529,7 @@ header {
   padding-right: 30px;
   margin-left: 20px;
   margin-right: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .customers i {
@@ -16503,6 +16552,7 @@ header {
   padding-bottom: 30px;
   padding-left: 30px;
   padding-right: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #shipping i {
