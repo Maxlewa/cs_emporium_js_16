@@ -15882,19 +15882,23 @@ header {
 }
 
 #buttonwhite {
-  width: 20px;
-  height: 20px;
+  width: 50px;
+  height: 30px;
   background-color: white;
   border: 1px solid grey;
   border-radius: 5px;
 }
 
 #buttonblack {
-  width: 20px;
-  height: 20px;
+  width: 50px;
+  height: 30px;
   background-color: black;
   border: 1px solid grey;
   border-radius: 5px;
+}
+
+#buttonblack i {
+  color: white;
 }
 
 #buttonconnexion {
@@ -16094,7 +16098,7 @@ header {
 
 .modal-content {
   background-color: #fefefe;
-  margin: 10% auto;
+  margin: 8% auto;
   padding: 20px;
   border: 1px solid #888;
   width: 50%;
@@ -16377,6 +16381,22 @@ header {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #sectiontrois {
+    height: 400px;
+  }
+  #divtextesectiontrois {
+    margin: 0;
+    text-align: center;
+    padding-top: 160px;
+  }
+  #divtextesectiontrois h1 {
+    color: white;
+    font-family: 'poppinsregular';
+    font-size: 26px;
+  }
+}
+
 #sectionquatre {
   margin-top: 80px;
 }
@@ -16433,6 +16453,12 @@ header {
 }
 
 @media screen and (min-width: 375px) and (max-width: 767px) {
+  #sectionquatre {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   #sectionquatre {
     display: none;
   }
@@ -16534,6 +16560,10 @@ header {
 @media screen and (min-width: 375px) and (max-width: 767px) {
   #sectioncinqrow {
     flex-wrap: wrap;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
   .customers {
     margin-left: 0;
