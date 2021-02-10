@@ -61,9 +61,26 @@ header
     padding-left: 7px
     padding-right: 7px
 
+// DROPDOWN
+
+.dropdown
+    text-align: center
+    display: none
+    margin-bottom: 50px
+    button
+        background-color: black
+        font-family: 'poppinsregular'
+        padding-left: 30px
+        padding-right: 30px
+    .dropdownmenu
+        font-family: 'poppinsregular'
+
+
 // HEADER 
 
 #divshopat
+    display: flex
+    justify-content: around
     background-color: #F3F3F3
     padding-left: 300px
     padding-right: 300px
@@ -104,3 +121,46 @@ header
     img
         width: 100%
         height: auto
+
+// MEDIA QUERIES
+
+// IPHONE X
+@media screen and (min-width:375px) and (max-width:812px)
+    nav
+        #divnav    
+            display: none !important
+    .sticky
+        display: none
+    .stickytitle
+        display: none
+    #divh1header
+        display: none
+    .dropdown
+        display: block 
+    #divshopat
+        display: block
+        padding-left: 20px
+        padding-right: 20px
+        padding-bottom: 50px
+        #divleftshopat
+            padding-top: 40px
+            width: 30px
+            #h3shopat
+                color: #c42b2b
+                font-family: 'poppinsregular'
+                font-size: 30px
+                margin-bottom: 0
+            #h1shopat
+                font-family: 'poppinsbold'
+                font-size: 50px
+                margin-bottom: 20px
+        #divimgshopat
+            display: none
+        #pshopat
+            margin-bottom: 15px
+            width: 300px
+        #buttonshopat
+            width: 160px
+
+// IPAD
+@media screen and (min-width:813px) and (max-width:1024px)

@@ -15909,7 +15909,26 @@ header {
   padding-right: 7px;
 }
 
+.dropdown {
+  text-align: center;
+  display: none;
+  margin-bottom: 50px;
+}
+
+.dropdown button {
+  background-color: black;
+  font-family: 'poppinsregular';
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.dropdown .dropdownmenu {
+  font-family: 'poppinsregular';
+}
+
 #divshopat {
+  display: flex;
+  justify-content: around;
   background-color: #F3F3F3;
   padding-left: 300px;
   padding-right: 300px;
@@ -15959,6 +15978,55 @@ header {
 #divimgshopat img {
   width: 100%;
   height: auto;
+}
+
+@media screen and (min-width: 375px) and (max-width: 812px) {
+  nav #divnav {
+    display: none !important;
+  }
+  .sticky {
+    display: none;
+  }
+  .stickytitle {
+    display: none;
+  }
+  #divh1header {
+    display: none;
+  }
+  .dropdown {
+    display: block;
+  }
+  #divshopat {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+  }
+  #divshopat #divleftshopat {
+    padding-top: 40px;
+    width: 30px;
+  }
+  #divshopat #divleftshopat #h3shopat {
+    color: #c42b2b;
+    font-family: 'poppinsregular';
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+  #divshopat #divleftshopat #h1shopat {
+    font-family: 'poppinsbold';
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  #divshopat #divimgshopat {
+    display: none;
+  }
+  #divshopat #pshopat {
+    margin-bottom: 15px;
+    width: 300px;
+  }
+  #divshopat #buttonshopat {
+    width: 160px;
+  }
 }
 
 .modal {
@@ -16281,6 +16349,8 @@ header {
 }
 
 #sectioncinqrow {
+  display: flex;
+  justify-content: around;
   text-align: center;
   font-family: 'poppinsregular';
   margin-top: 50px;
@@ -16371,6 +16441,21 @@ header {
   visibility: visible;
 }
 
+@media screen and (min-width: 375px) and (max-width: 812px) {
+  #sectioncinqrow {
+    flex-wrap: wrap;
+  }
+  .customers {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  #shipping {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 #footer {
   background-color: #4b4c58;
   color: white;
@@ -16378,6 +16463,7 @@ header {
 }
 
 #footergrey {
+  display: flex;
   margin-left: 150px;
   margin-right: 150px;
   padding-top: 70px;
@@ -16426,4 +16512,22 @@ header {
   padding-bottom: 30px;
   margin: 0;
   text-align: center;
+}
+
+@media screen and (min-width: 375px) and (max-width: 812px) {
+  #footergrey {
+    flex-wrap: wrap;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  .footergreyelement {
+    width: 80%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .footergreyelement h4 {
+    margin-bottom: 20px;
+  }
 }

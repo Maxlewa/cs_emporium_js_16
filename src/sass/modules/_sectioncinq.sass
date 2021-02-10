@@ -1,4 +1,6 @@
 #sectioncinqrow
+    display: flex
+    justify-content: around
     text-align: center
     font-family: 'poppinsregular'
     margin-top: 50px
@@ -69,3 +71,19 @@
     opacity: 1
     transform: none
     visibility: visible
+
+// IPHONE X
+@media screen and (min-width:375px) and (max-width:812px)
+    #sectioncinqrow
+        flex-wrap: wrap
+    .customers
+        margin-left: 0
+        margin-right: 0
+        margin-bottom: 0
+    #shipping
+        margin-left: 0
+        margin-right: 0
+        
+
+// IPAD
+@media screen and (min-width:813px) and (max-width:1024px)
