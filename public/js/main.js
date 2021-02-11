@@ -121,19 +121,15 @@ buttons.addEventListener('click', e => {
     if (e.target.classList.contains("first")) {
       slides.style.transform = "translateX(0)"
       e.target.classList.add("active")
-      // e.target.parentNode.style.opacity = "80%"
     } else if (e.target.classList.contains("second")) {
       slides.style.transform = "translateX(-14.2%)"
       e.target.classList.add("active")
-      // e.target.parentNode.style.opacity = "80%"
     } else if (e.target.classList.contains("third")) {
       slides.style.transform = "translateX(-28.4%)"
       e.target.classList.add("active")
-      // e.target.parentNode.style.opacity = "80%"
     } else if (e.target.classList.contains("fourth")) {
       slides.style.transform = "translateX(-42.6%)"
       e.target.classList.add("active")
-      // e.target.parentNode.style.opacity = "80%"
     }
   }
 })
