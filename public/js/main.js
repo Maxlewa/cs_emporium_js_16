@@ -7,6 +7,8 @@ window.onscroll = function() {myFunction()};
 var navbar = document.getElementById("divnav");
 var titreheader = document.querySelector("#divh1header");
 
+var titreGhost = document.querySelector("#blocblanc")
+
 // Position de la navbar
 var sticky = navbar.offsetTop;
 
@@ -15,9 +17,11 @@ function myFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
     titreheader.classList.add("stickytitle");
+    titreGhost.classList.add("show");
   } else {
     navbar.classList.remove("sticky");
     titreheader.classList.remove("stickytitle");
+    titreGhost.classList.remove("show");
   }
 }
 
