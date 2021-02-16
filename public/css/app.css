@@ -16616,14 +16616,30 @@ header {
 }
 
 @media screen and (min-width: 375px) and (max-width: 767px) {
-  #sectionquatre {
-    display: none;
+  .carouselitem {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 42vh;
+  }
+  .carouselitem .imgrecentbis {
+    width: 41vh;
+  }
+  .carouselitem .imgrecentbis img {
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  #sectionquatre {
-    display: none;
+  .carouselitem {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 33.2vh;
+  }
+  .imgrecentbis {
+    width: 32.5vh;
+  }
+  .imgrecentbis img {
+    width: 100%;
   }
 }
 
