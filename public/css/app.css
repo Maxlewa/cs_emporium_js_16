@@ -16010,14 +16010,39 @@ header {
 }
 
 @media screen and (min-width: 375px) and (max-width: 767px) {
-  nav #divnav {
+  #blocblanc {
+    margin-bottom: 30px;
+    margin-top: 40px;
+  }
+  #divnav {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .navhome {
+    display: none !important;
+  }
+  .navproduct {
+    display: none !important;
+  }
+  .navblog {
+    display: none !important;
+  }
+  .navelements {
+    display: none !important;
+  }
+  .navabout {
+    display: none !important;
+  }
+  .navcontact {
     display: none !important;
   }
   .sticky {
-    display: none;
+    display: none !important;
   }
   .stickytitle {
-    display: none;
+    display: none !important;
   }
   #divh1header {
     display: none;
@@ -16059,14 +16084,45 @@ header {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  nav #divnav {
+  #blocblanc {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  #divh1header {
+    font-family: 'poppinsbold';
+    text-align: center;
+    margin-bottom: 0;
+  }
+  #divnav {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10px;
+  }
+  .navhome {
+    display: none !important;
+  }
+  .navproduct {
+    display: none !important;
+  }
+  .navblog {
+    display: none !important;
+  }
+  .navelements {
+    display: none !important;
+  }
+  .navabout {
+    display: none !important;
+  }
+  .navcontact {
     display: none !important;
   }
   .sticky {
-    display: none;
+    display: none !important;
   }
   .stickytitle {
-    display: none;
+    display: none !important;
   }
   .dropdown {
     display: block;
@@ -16123,7 +16179,7 @@ header {
 
 .modal-content {
   background-color: #fefefe;
-  margin: 8% auto;
+  margin: 7% auto;
   padding: 20px;
   border: 1px solid #888;
   width: 50%;
@@ -16192,6 +16248,49 @@ header {
 #modalsocials i {
   font-size: 30px;
   color: #686868;
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .modal-content {
+    width: 80%;
+    padding: 10px;
+    margin: 10% auto;
+  }
+  #modaltwobuttons {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  #h1modal {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .login {
+    margin-bottom: 20px;
+  }
+  #modalsocials {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .modal-content {
+    width: 80%;
+    padding: 10px;
+  }
+  #modaltwobuttons {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  #h1modal {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .login {
+    margin-bottom: 20px;
+  }
+  #modalsocials {
+    width: 25%;
+  }
 }
 
 #sectionun {

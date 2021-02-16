@@ -12,7 +12,7 @@
 
 .modal-content 
     background-color: #fefefe
-    margin: 8% auto
+    margin: 7% auto
     padding: 20px
     border: 1px solid #888
     width: 50% 
@@ -70,4 +70,39 @@
     i
         font-size: 30px
         color: #686868
+
+// MEDIA QUERIES
+
+// IPHONE X
+@media screen and (min-width:375px) and (max-width:767px)
+    .modal-content 
+        width: 80% 
+        padding: 10px
+        margin: 10% auto
+    #modaltwobuttons
+        margin-top: 10px
+        margin-bottom: 30px
+    #h1modal
+        font-size: 24px
+        margin-bottom: 20px
+    .login
+        margin-bottom: 20px
+    #modalsocials
+        width: 50%
+
+// IPAD
+@media screen and (min-width:768px) and (max-width:1024px)
+    .modal-content 
+        width: 80% 
+        padding: 10px
+    #modaltwobuttons
+        margin-top: 10px
+        margin-bottom: 30px
+    #h1modal
+        font-size: 28px
+        margin-bottom: 20px
+    .login
+        margin-bottom: 20px
+    #modalsocials
+        width: 25%
 
