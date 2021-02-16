@@ -100,11 +100,8 @@
 
 // MEDIA QUERIES
 
-// IPHONE X
-@media screen and (min-width:375px) and (max-width:767px)
-
 // IPAD
-@media screen and (min-width:768px) and (max-width:1024px)
+@media screen and (min-width:768px) and (max-width:1023px)
     .details
         display: none
     .cart
@@ -112,4 +109,19 @@
     .detailsicon
         display: block !important
     .carticon
+        display: block !important
+
+// IPAD PRO
+@media screen and (min-width:1024px) and (max-width:1300px)
+    .details
+        display: none
+    .cart
+        display: none
+    .detailsicon
+        padding-left: 65px !important
+        padding-right: 65px !important
+        display: block !important
+    .carticon
+        padding-left: 65px !important
+        padding-right: 65px !important
         display: block !important
